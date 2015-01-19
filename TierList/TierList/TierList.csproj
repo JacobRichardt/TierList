@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{F256E51F-3486-402C-985B-D34EEEB83389}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.1</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="App\Shell\Shell.html" />
+    <Content Include="App\Styles\Main.css" />
+    <Content Include="default.html" />
+    <Content Include="Lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Lib\bootstrap\css\bootstrap.css" />
+    <Content Include="Lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Lib\bootstrap\js\bootstrap.js" />
+    <Content Include="Lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Lib\bootstrap\js\npm.js" />
+    <Content Include="Lib\jquery\jquery.min.js" />
+    <Content Include="Lib\knockout\knockout.min.js" />
+    <Content Include="Lib\requirejs\async.js" />
+    <Content Include="Lib\requirejs\goog.js" />
+    <Content Include="Lib\requirejs\propertyParser.js" />
+    <Content Include="Lib\requirejs\require.min.js" />
+    <Content Include="Lib\requirejs\text.js" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Lib\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="App\Main.ts" />
+    <TypeScriptCompile Include="App\NameConventionLoader.ts" />
+    <TypeScriptCompile Include="App\Shell\Shell.ts" />
+    <TypeScriptCompile Include="TypeScriptDefinitions\bootstrap.d.ts" />
+    <TypeScriptCompile Include="TypeScriptDefinitions\jquery.d.ts" />
+    <TypeScriptCompile Include="TypeScriptDefinitions\knockout.d.ts" />
+    <TypeScriptCompile Include="TypeScriptDefinitions\require.d.ts" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TierList</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4452</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4452/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
