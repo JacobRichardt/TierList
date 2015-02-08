@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.1</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -18,7 +18,7 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="App\Shell\Shell.html" />
+    <Content Include="App\Components\Shell\Shell.html" />
     <Content Include="App\Styles\Main.css" />
     <Content Include="default.html" />
     <Content Include="Lib\bootstrap\css\bootstrap-theme.css" />
@@ -54,7 +54,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="App\Main.ts" />
     <TypeScriptCompile Include="App\NameConventionLoader.ts" />
-    <TypeScriptCompile Include="App\Shell\Shell.ts" />
+    <TypeScriptCompile Include="App\Components\Shell\Shell.ts" />
     <TypeScriptCompile Include="TypeScriptDefinitions\bootstrap.d.ts" />
     <TypeScriptCompile Include="TypeScriptDefinitions\jquery.d.ts" />
     <TypeScriptCompile Include="TypeScriptDefinitions\knockout.d.ts" />

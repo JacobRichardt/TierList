@@ -2,67 +2,29 @@
 	margin-top: 10px;
 }
 
-.SearchOpenColumn {
-	width: 50px;
+.Tiers {
+	width: 800px;
 }
 
-.SearchResults .pagination {
-	margin: 5px 5px 0 0;
+.Tier {
+	height: 100px;
+	width: 100%;
+	display: table;
+	border-spacing: 5px;
 }
 
-.SearchResults .panel-heading, .SearchResults .panel-footer{
-	padding: 1px;
-}
-
-.SearchResults .NumberOfResults {
-	padding: 10px 5px;
-	display: inline-block;
-}
-
-.SearchResults .PageSizeSelection {
+.Tier .TierHeader, .Tier .TierContent {
 	padding: 5px;
+	background-color: lightcyan;
+	display: table-cell;
+	height: 100%;
+	font-size: 50px;
 }
 
-form.CreateUser h4 {
-	margin-right: 30px;
+.Tier .TierHeader {
+	width: 100px;
+	text-align: center;
 }
-
-form.CreateUser .form-group .input-group input {
-	width: 250px;
-}
-form.CreateUser .form-group .input-group input#CreateUserPassword {
-	width: 150px;
-}
-
-.FileDropdown {
-    position: relative;
-    overflow: hidden;
-	cursor: pointer;
-}
-.FileDropdown input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
-
-textarea {
-	resize: none;
-}
-
-.AddTimedAnnotationForm {
-	margin-top: 20px;
-}
-
-.ManageAnnotationColumn {
-	width: 160px;
+.Tier .TierContent {
+	
 }

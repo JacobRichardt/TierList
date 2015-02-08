@@ -1,6 +1,0 @@
-﻿class Shell
-{
-	
-}
-
-export = Shell;

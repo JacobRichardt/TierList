@@ -17,7 +17,9 @@ class NameConventionLoader implements KnockoutComponentLoader
 		knockout.components.register(componentName, {});
 
 		var filePath = componentName.replace(this._prefix + "-", "").replace("-", "/");
-		filePath += (filePath.lastIndexOf("/") == -1 ? "/" + filePath : filePath.substring(filePath.lastIndexOf("/")));
+		filePath += ((filePath.lastIndexOf("/") == -1 ? "/" + filePath : filePath.substring(filePath.lastIndexOf("/"))));
+
+		filePath = "Components/" + filePath;
 
 		callback({
 			viewModel: { require: filePath },
