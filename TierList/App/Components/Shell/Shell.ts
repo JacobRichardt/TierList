@@ -1,6 +1,7 @@
 ﻿import knockout = require("knockout");
+import ItemsManager = require("Managers/Items");
 
-type TierData = {Title:string};
+type TierData = {Title:string; Items:{Title:string}[]};
 
 class Shell
 {
@@ -8,14 +9,14 @@ class Shell
 
 	constructor()
 	{
-		this.Tiers.push({ Title: "SS" });
-		this.Tiers.push({ Title: "S+" });
-		this.Tiers.push({ Title: "S" });
-		this.Tiers.push({ Title: "A" });
-		this.Tiers.push({ Title: "B" });
-		this.Tiers.push({ Title: "C" });
-		this.Tiers.push({ Title: "D" });
-		this.Tiers.push({ Title: "E" });
+		this.Tiers.push({ Title: "SS", Items: null});
+		this.Tiers.push({ Title: "S+", Items: null });
+		this.Tiers.push({ Title: "S", Items: null });
+		this.Tiers.push({ Title: "A", Items: ItemsManager.Items() });
+		this.Tiers.push({ Title: "B", Items: null });
+		this.Tiers.push({ Title: "C", Items: null });
+		this.Tiers.push({ Title: "D", Items: null });
+		this.Tiers.push({ Title: "E", Items: null });
 	}
 }
 

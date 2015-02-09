@@ -1,6 +1,4 @@
-﻿declare module "Portal" { }
-declare module "text!../../Configuration.json" { var configuration: string; export = configuration; }
-declare var CacheBuster: number;
+﻿declare var CacheBuster: number;
 
 requirejs.config({
 	paths: {

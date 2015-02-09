@@ -17,8 +17,8 @@
 	padding: 5px;
 	background-color: lightcyan;
 	display: table-cell;
-	height: 100%;
 	font-size: 50px;
+	vertical-align: middle;
 }
 
 .Tier .TierHeader {
@@ -27,4 +27,14 @@
 }
 .Tier .TierContent {
 	
+}
+
+.Item {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background-color: red;
+	font-size: 12px;
+	margin-right: 5px;
+	vertical-align: middle;
 }
