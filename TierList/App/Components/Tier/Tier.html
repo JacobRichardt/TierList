@@ -2,7 +2,7 @@
 	<div class="TierHeader" data-bind="text: Title">
 
 	</div>
-	<div class="TierContent">
+	<div class="TierContent" data-bind="event: {dragover: DragOver, drop: Drop}">
 		<!-- ko foreach: Items -->
 		<!-- ko component: {name: 'Item', params: $data} -->
 		<!-- /ko -->

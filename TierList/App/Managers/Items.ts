@@ -1,5 +1,5 @@
 ﻿import knockout = require("knockout");
 
-type ItemData = { Title: string };
+type ItemData = { Id: String; Title: string };
 
-export var Items: KnockoutObservableArray<ItemData> = knockout.observableArray<ItemData>([{ Title: "Bastet" }, { Title: "Aphrodites" }]);
+export var Items: KnockoutObservableArray<ItemData> = knockout.observableArray<ItemData>([{ Id: "1", Title: "Bastet" }, { Id: "2",  Title: "Aphrodites" }]);
